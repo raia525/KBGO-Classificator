@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi KBGO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo-group">
+            <img src="{{ url_for('static', filename='images/Logo Tel-U.png') }}" alt="Logo Tel-U">
+            <img src="{{ url_for('static', filename='images/Logo AILO Horizontal.png') }}" alt="Logo AILO">
+            <img src="{{ url_for('static', filename='images/Logo Inar Aksara.png') }}" alt="Logo Inar Aksara">
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}" class="active">About</a>
+            <a href="{{ url_for('peneliti') }}" >Peneliti</a>
+        </div>
+    </div>
+</nav>
+
+<div class="about-container">
+    <h2 class="section-title">Tentang Platform</h2>
+    
+    <div class="about-card">
+        <div class="about-text">
+            <p>
+                Platform ini dikembangkan oleh tim peneliti <strong>Telkom University</strong> untuk membantu mendeteksi indikasi 
+                <span class="highlight">Kekerasan Berbasis Gender Online (KBGO)</span> secara verbal pada media digital. 
+                Melalui analisis bahasa menggunakan teknologi <span class="highlight">Natural Language Processing (NLP)</span>, 
+                sistem ini berfungsi sebagai mekanisme deteksi dini yang cerdas.
+            </p>
+            
+            <p>
+                Dengan memanfaatkan algoritma <em>Machine Learning</em>, platform ini mampu mengidentifikasi pola ujaran 
+                yang berpotensi mengandung kekerasan, pelecehan, atau diskriminasi di ruang digital secara otomatis dan akurat.
+            </p>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+
+            <h3 style="color: #333; text-align: center; margin-bottom: 20px;">Pendekatan SAFE AI</h3>
+            <p style="text-align: center; font-size: 14px; color: #666;">
+                Pengembangan sistem ini mengadopsi prinsip AI yang bertanggung jawab untuk memastikan ekosistem digital yang inklusif:
+            </p>
+
+            <div class="safe-ai-grid">
+                <div class="safe-item">Secure</div>
+                <div class="safe-item">Accountable</div>
+                <div class="safe-item">Fair</div>
+                <div class="safe-item">Explainable</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Deteksi KBGO Indonesia. All rights reserved.</p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
